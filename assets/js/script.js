@@ -234,6 +234,8 @@ function resetGame() {
   gameSpeedDelay = 200;
   updateScore();
   startBtn.style.display = "flex";
+  startBtn.style.justifyContent = "center";
+  startBtn.style.alignItems = "center";
 }
 
 // Update score fxn
