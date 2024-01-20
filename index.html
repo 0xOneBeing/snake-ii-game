@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7f88400d0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="scores">
+        <h1 id="score">000</h1>
+        <h1 id="highScore">000</h1>
+      </div>
+
+      <div class="platform">
+        <div class="game-board">
+          <div id="game-board"></div>
+          <div class="splash text-center">
+            <h1 id="instruction-text">
+              Press<span class="desktop-start">&nbsp;space bar</span
+              ><span class="mobile-start">
+                &nbsp;<i class="fa-solid fa-play"></i>&nbsp;</span
+              ><br />to start the game
+            </h1>
+            <img
+              id="logo"
+              src="assets/img/snake-game-ai-gen.png"
+              alt="Snake II"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mobileControls">
+        <div class="buttons">
+          <div class="left">
+            <button type="button" title="left" id="left">
+              <i class="fa-solid fa-caret-left"></i>
+            </button>
+          </div>
+
+          <div class="upDown">
+            <div class="up">
+              <button type="button" title="up" id="up">
+                <i class="fa-solid fa-caret-up"></i>
+              </button>
+            </div>
+
+            <div class="down">
+              <button type="button" title="down" id="down">
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <button type="button" title="right" id="right">
+              <i class="fa-solid fa-caret-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="start-btn">
+          <button type="button" title="start" id="start">
+            <i class="fa-solid fa-play"></i>&nbsp;Start Game
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
